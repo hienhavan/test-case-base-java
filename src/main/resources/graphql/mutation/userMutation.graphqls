@@ -1,0 +1,11 @@
+input userInput {
+    id: ID
+    name: String!
+}
+
+
+type Mutation {
+    createUser(input: userInput!): usersRes
+    updateUser(input: userInput!): usersRes
+    deleteUser(idUser: ID!): ID
+}

@@ -1,0 +1,21 @@
+{
+  "$id": "https://example.com/createPayment.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Validate create profile request",
+  "description": "Create New User",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+      "name": {
+        "type": "string",
+        "description": "Name of the user",
+        "pattern": "([A-Za-z]+)"
+      }
+  },
+  "required": [
+    "name"
+  ]
+}
+
+
+

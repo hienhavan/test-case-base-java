@@ -1,0 +1,17 @@
+
+type usersRes {
+    id: ID
+    name: String!
+}
+
+type UserPage {
+    content: [usersRes]
+    totalElements: Int!
+    totalPages: Int!
+    pageNumber: Int!
+    pageSize: Int!
+}
+
+type Query {
+    users(page: Int, size: Int): UserPage
+}
